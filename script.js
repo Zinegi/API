@@ -19,7 +19,7 @@ function displayRecipes(recipes){
 
         recipeIngredientsEl.innerHTML = `
         <strong>Ingredients: </strong> <br> <br> - ${truncatedIngredientsText}
-        `;
+        ...`;
 
         let showMoreBtn = document.createElement("button");
         showMoreBtn.innerText = `Afficher plus`;
@@ -33,7 +33,7 @@ function displayRecipes(recipes){
             } else {
                 recipeIngredientsEl.innerHTML = `
                 <strong>Ingredients: </strong> <br> <br> - ${truncatedIngredientsText}
-                `;
+                ...`;
                 showMoreBtn.innerText = "Afficher plus";
             }
         });
