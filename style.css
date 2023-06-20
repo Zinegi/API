@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-color: rgb(15, 115, 209);
+    padding: 1em;
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    margin-left: 1em;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+a{
+    color: aliceblue;
+}
+
+ul{
+    list-style: none;
+}
+
+.recipe-item{
+    display: flex ;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.recipe-item img{
+    width: 400px;
+    object-fit: cover;
+}
+
+.recipe-item h2{
+    font-size: 1.2em;
+    margin: 0;
+    max-width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.recipe-item p{
+    max-width: 250px;
+    margin: 0;
+    padding: 10px;
+    color: rgb(195, 223, 255);
+}
+
+.recipe-item a{
+    max-width: 100px;
+    padding: 10px;
+    background-color: rgb(59, 111, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.recipe-item button{
+    max-width: 100px;
+    padding: 2px;
+    background-color: rgb(59, 111, 255);
+    text-decoration: none;
+    font-size: 15px;
+    border: 0;
+    text-align: center;
+    color: aliceblue;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 95%;
+    }
+    .recipe-item{
+        flex-direction: column;
+    }
+}
